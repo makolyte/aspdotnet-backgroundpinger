@@ -27,8 +27,8 @@ namespace BackgroundPinger
 
             services.AddSingleton<IPingSettings>(new PingSettings() 
             { 
-                Timeout = TimeSpan.FromSeconds(30),
-                Frequency = TimeSpan.FromSeconds(1),
+                Timeout = TimeSpan.FromSeconds(5),
+                Frequency = TimeSpan.FromSeconds(30),
                 Target = "www.google.com"
             });
 
