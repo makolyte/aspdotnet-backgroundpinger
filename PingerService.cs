@@ -52,8 +52,6 @@ namespace BackgroundPinger
         }
         public async override Task StopAsync(CancellationToken cancellationToken)
         {
-            Logger.Information("Shutting down");
-
             if(Pinger != null)
             {
                 Pinger.Dispose();
